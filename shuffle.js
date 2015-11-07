@@ -1,3 +1,8 @@
+/*
+  Author: san-chuan hung (sanchuah@andrew.cmu.edu)
+  2015/ 11/ 06
+*/
+
 var isHover = false;
 
 var i = 0;
