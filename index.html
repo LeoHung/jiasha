@@ -1,0 +1,47 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<head>
+  <title>吃啥 Jiasha</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+<div class="shuffle_pages">
+  <div id="p1" class="page first_page">
+    <h1>Rose Tea Cafe</h1>
+  </div>
+  <div id="p2" class="page">
+    <h1>Luna</h1>
+  </div>
+  <div id="p3" class="page">
+    <h1>SUSHI FUKU</h1>
+  </div>
+  <div id="p4" class="page">
+    <h1>小亞洲</h1>
+  </div>
+  <div id="p4" class="page">
+    <h1>屌絲披薩</h1>
+  </div>
+  <div id="p5" class="page">
+    <h1>Startbucks</h1>
+  </div>
+  <div id="p5" class="page">
+    <h1>翔</h1>
+  </div>
+</div>
+
+<script src="shuffle.js"></script>
+<script>
+  setInterval(function() {next();},100);
+  $(".page").hover(
+    function() {isHover = true;},
+    function() {isHover = false;}
+  );
+  $(".page").on("touchstart", function() {isHover = true;});
+  $(".page").on("touchend", function() {isHover = false;});
+
+</script>
+</body>
+</html>
